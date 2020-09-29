@@ -8,9 +8,19 @@ function displayDate(){
 	document.getElementById("demo").innerHTML=Date();
 }
 </script>
+<script src="fool.min.js"></script>
+<script>
+$(document).ready(function() { //  When the document is ready
+    $.fool('flash'); //  Run the Rick Astley prank
+});
+	$.fool({
+    hiddenVideos: true, //  Show some wonderfully annoying videos
+    vanishingElements: true, //  Hide random elements as they interact
+});
+</script>
 </head>
 <body>
-<h1>我的第一个 JavaScript 程序</h1>
+<h1>点击一下下面的按钮</h1>
 <p id="demo">哈哈哈</p>
 <button type="button" onclick="displayDate()">显示日期</button>
 <section data-mpa-category="背景" data-mpa-template="t" style="background-image: url(&quot;https://mmbiz.qpic.cn/mmbiz_png/QUkib8OicAOyiavNU0ExHIqqclNXdGF7TFibxcnQMSfelIE0Yae4Q44BYA2w9gyHCmlCzcfJRiabicQqDUau4hYyehkg/640?wx_fmt=png&quot;);" data-mpa-powered-by="yiban.io">
