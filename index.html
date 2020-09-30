@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <title>Welcome to my website!</title>
     <style>table {margin: auto;} body{text-align: center;}</style>
+    <style type="text/css">
+    body {transform: scale(0.8) translate(0px, 0px); }
+    </style>
 </head>
 
-<body style="padding:100px 100px">
+<body style="padding:100px 100px;background-color: lightgray;">
     <table>
         <tr>
             <td>
@@ -174,22 +177,81 @@
         }   
     </script>
     <p>
-
     </p>
-    <script language="javascript">
-        function custom_close() {
-            if
-                (confirm("您确定要关闭本页吗？")) {
-                window.opener = null;
-                window.open('', '_self');
-                window.close();
-            }
-            else { }
-        }
-    </script>
-    <input id="btnClose" type="button" value="关闭本页" onClick="custom_close()" style="width:150px;height:50px;font-size: 30px;position:relative;top:100px" />
+
     <p style="padding-bottom: 100px;">
     </p>
+    <style>
+        .box{
+        position:fixed;
+        right:10px;
+        bottom: 10px;
+        height:30px;
+        width: 50px; 
+        text-align:center;
+        padding-top:20px; 
+        background-color: lightblue;
+        border-radius: 20%;
+        overflow: hidden;
+        }
+        .box:hover:before{
+        top:50%
+        }
+        .box:hover .box-in{
+        visibility: hidden;
+        }
+        .box:before{
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        content:'回到顶部';
+        width: 40px;
+        color:peru;
+        font-weight:bold;
+        } 
+        .box-in{
+        visibility: visible;
+        display:inline-block;
+        height:20px;
+        width: 20px;
+        border: 3px solid black;
+        border-color: white transparent transparent white;
+        transform:rotate(45deg);
+        }
+        </style>
+        <body style="height:2000px;">
+        <div id="box" class="box">
+        <div class="box-in"></div>
+        </div> 
+        </body>
+        <script>
+        var timer = null;
+        box.onclick = function(){
+        cancelAnimationFrame(timer);
+        timer = requestAnimationFrame(function fn(){
+        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if(oTop > 0){
+        document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+        timer = requestAnimationFrame(fn);
+        }else{
+        cancelAnimationFrame(timer);
+        } 
+        });
+        }
+        </script>
+        <script language="javascript">
+            // 这个脚本是 ie6和ie7 通用的脚本
+            function custom_close(){
+                if(confirm("您确定要关闭本页吗？")){
+                    window.opener=null;
+                    window.open('','_self');
+                    window.close();
+                }
+                else{
+                }
+            }
+            </script>
+            <input id="btnClose" type="button" value="关闭本页" onClick="custom_close()" style="font-size: 20px;width: 140px;height: 30px;"/>
 </body>
-
 </html>
