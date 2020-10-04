@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
     <meta charset="utf-8" />
-    <title>Welcome to my website!</title>
+    <title>I love THU!</title>
     <style>table {margin: auto;} body{text-align: center;}</style>
     <style type="text/css">
     body {transform: scale(0.8) translate(0px, 0px); }
@@ -10,16 +10,17 @@
         a:link,a:visited{
          text-decoration:none;
          font-size: 20pt;
-         color: black;  /*超链接无下划线*/
+         color: black;
          font-weight: bold;
         }
         a:hover{
-         text-decoration:underline;  /*鼠标放上去有下划线*/
+         text-decoration:underline;
         }
         </style>
+    <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 
-<body style="background-color: lightgray;position: relative;bottom: 20px;">
+<body style="position: relative;bottom: 20px;">
     <table>
         <tr>
             <td>
@@ -38,6 +39,9 @@
                 <p style="font-size:24pt;position:relative;left: 40px;padding-right: 100px;position:relative;bottom:30px">
                     <nobr>山东省聊城第一中学2017级10班</nobr>
                 </p>
+            </td>
+            <td>
+                <img src="20201004220058.gif" width="300" height="360" title="Actually, I love PKU!">
             </td>
         </tr>
         <tr>
@@ -68,13 +72,11 @@
                     <p style="font-family:'Microsoft YaHei UI'; font-size:20pt; font-weight:bold">大学及专业</p>
                 </div>
                <p style="font-family:'Microsoft YaHei UI'; font-size:15pt; font-weight:normal">北京大学医学部药学院</p>
-                <p style="font-size:15pt" style="font-family:'Microsoft YaHei UI'; font-size:15pt">&#xa0;
-                </p>
-                <div style="border-bottom-color:#94b6d2; border-bottom-style:solid; border-bottom-width:2pt";>
-                    <h2 style="font-size:16pt; padding-bottom:6pt">
-                    </h2>
-                    <div style="position: relative;bottom: 20px;">
-                        <a href="https://wenku.baidu.com/topic/gaokao2020/zhenti?year=2020&area=%E6%96%B0%E9%AB%98%E8%80%83I%E5%8D%B7&channel=pc_aladdin_zhenti_province_title&t=1594697543" target="_blank">高考成绩(可点击)
+            </div>
+            <div style="position: relative;top: 160px;">
+                <div style="border-bottom-color:#94b6d2; border-bottom-style:solid; border-bottom-width:2pt">
+                    <div style="position: relative;bottom: 30px;">
+                        <a href="https://wenku.baidu.com/topic/gaokao2020/zhenti?year=2020&area=%E6%96%B0%E9%AB%98%E8%80%83I%E5%8D%B7&channel=pc_aladdin_zhenti_province_title&t=1594697543" target="_blank">高考成绩(点击可尝试山东卷)
                         </a>
                     </div>
                 </div>
@@ -132,15 +134,12 @@
                         </td>
                     </tr>
                 </table>
-                <p style="font-size:15pt" style="font-family:'Microsoft YaHei UI'; font-size:15pt">&#xa0;
-                </p>
-                <div
-                    style="border-bottom-color:#94b6d2; border-bottom-style:solid; border-bottom-width:2pt">
+            </div>
+            <div style="position: relative;top: 170px;">
+                <div style="border-bottom-color:#94b6d2; border-bottom-style:solid; border-bottom-width:2pt">
                     <h2 style="font-size:16pt; padding-bottom:6pt">
                     </h2>
-                    <p style="font-size:16pt; page-break-after:avoid; page-break-inside:avoid">
-                        <span
-                            style="font-family:'Microsoft YaHei UI'; font-size:20pt; font-weight:bold">所得荣誉
+                    <p style="font-size:16pt; page-break-after:avoid; page-break-inside:avoid;font-family:'Microsoft YaHei UI'; font-size:20pt; font-weight:bold">所得荣誉
                     </p>
                 </div>
                 <div>
@@ -154,6 +153,8 @@
                         style="font-family:'Microsoft YaHei UI'; font-size:15pt;font-weight:normal">聊城一中十大学霸，优秀学生等</p>
                 </div>
             </div>
+                <div style="position: relative;top: 220px;"> <a href="条幅.png" target="_blank" style="font-size: 20pt;font-weight: normal;font">与我联系</a>
+                </div>
             </td>
         </tr>
     </table>
@@ -162,21 +163,18 @@
     </div>
     <script type="text/javascript">
         var add = setInterval("getTime()", 1000);
-        //stop()这个函数主要是清除设置的定时器
         function stop() {
             clearInterval(add);
         }
-        //这个函数主要是获取时间然后写入div中
         function getTime() {
-            var date = new Date().toLocaleString();//创建date对象，获取时间
-            var id1 = document.getElementById("time");//通过div标签的id多去div标签
-            id1.innerHTML = date;//将时间通过innerHTML属性写入div标签中
+            var date = new Date().toLocaleString();
+            var id1 = document.getElementById("time");
+            id1.innerHTML = date;
         }   
     </script>
     <p>
     </p>
         <script language="javascript">
-            // 这个脚本是 ie6和ie7 通用的脚本
             function custom_close(){
                 if(confirm("点确定你也关不上。")){
                     window.opener=null;
