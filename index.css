@@ -1,0 +1,43 @@
+a:link,
+a:visited {
+    text-decoration: none;
+    font-size: 20pt;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    transform: scale(0.8) translate(0px, 0px); 
+}
+
+table {
+    margin: auto;
+}
+
+.a1 {
+    padding-left: 5.4pt;
+    padding-right: 5.4pt;
+    vertical-align: middle;
+}
+
+.a1 td {
+    width: 44px;
+}
+
+.a3 {
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15pt;
+}
+
+#b2 {
+    font-family: 'Microsoft YaHei UI';
+    font-size: 15pt;
+    font-weight: normal;
+}
