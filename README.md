@@ -1,5 +1,6 @@
 # hzb666.github.io
-# my website
+[**my website**](https://hzb666.github.io/)
+
 ## 个人简历
 ### 照片是我室友
 303宿舍,猜猜照片是谁
